@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { getSummaries } from "@/lib/summaries";
 import { itemVariants } from "@/utils/constants";
 import { currentUser } from "@clerk/nextjs/server";
-import { ArrowRight, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 

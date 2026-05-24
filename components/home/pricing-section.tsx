@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
-import { ArrowRight, CheckIcon } from "lucide-react";
-import RazorpayCheckout from "../common/RazorpayCheckout";
+import { CheckIcon } from "lucide-react";
 import { MotionDiv, MotionSection } from "../common/motion.wrapper";
 import { containerVariants, itemVariants } from "@/utils/constants";
 
@@ -87,21 +86,6 @@ const PricingCard = ({
                         </li>
                     ))}
                 </MotionDiv>
-
-                {/* Only show RazorpayCheckout button for Pro plan */}
-                {id === 'pro' && (
-                    <MotionDiv 
-                        variants={listVariants}
-                        className="space-y-2 flex justify-center w-full">
-                        <div className="w-full">
-                            <RazorpayCheckout 
-                                planType={id as 'basic' | 'pro'}
-                                amount={price}
-                                planName={name}
-                            />
-                        </div>
-                    </MotionDiv>
-                )}
 
             </div>
         </MotionDiv>
