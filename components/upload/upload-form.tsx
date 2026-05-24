@@ -30,6 +30,7 @@ export default function UploadForm() {
     const [showUpgradeModal, setShowUpgradeModal] = useState(false);
     const [file, setFile] = useState<File | null>(null);
 
+    console.log("Current user:", user?.id);
     const { startUpload } = useUploadThing("pdfUploader", {
         onClientUploadComplete: () => {
             console.log("uploaded successfully!");
