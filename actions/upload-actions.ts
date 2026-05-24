@@ -53,7 +53,7 @@ export async function generatePdfSummary(uploadResponse: [{
                 try {
                     summary = await generateSummaryFromGemini(pdfText)
                 } catch (geminiError) {
-                    console.error('Gemini API failed after OpenAI limit Exceeded', geminiError);
+                    console.error('Gemini API failed limit Exceeded', geminiError);
                     throw new Error('Failed to generate summary with Available AI providers');
                 }
             }

@@ -38,10 +38,10 @@ export default function DeleteButton({ summaryId }: DeleteButtonProps) {
         <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger asChild>
                     <Button
-                            variant={'ghost'}
-                            size='icon'
-                            className="text-gray-400 bg-gray-50 border border-gray-200 hover:text-rose-600 hover:bg-rose-50">
-                                <Trash2 className="w-4 h-4" />
+                        variant={'ghost'}
+                        size='icon'
+                        className="text-gray-400 bg-gray-50 border border-gray-200 hover:text-rose-600 hover:bg-rose-50">
+                        <Trash2 className="w-4 h-4" />
                     </Button>
             </DialogTrigger>
             <DialogContent>
@@ -54,11 +54,11 @@ export default function DeleteButton({ summaryId }: DeleteButtonProps) {
                 </DialogHeader>
                 <DialogFooter>
                     <Button
-                            variant='ghost'
-                            className="bg-gray-50 border border-gray-200 hover:text-gray-600 hover:bg-gray-100"
-                            onClick={() => setOpen(false)}>
+                        variant='ghost'
+                        className="bg-gray-50 border border-gray-200 hover:text-gray-600 hover:bg-gray-100"
+                        onClick={() => setOpen(false)}>
                             Cancel
-                        </Button>
+                    </Button>
 
                         <Button
                             variant='destructive'
@@ -71,5 +71,6 @@ export default function DeleteButton({ summaryId }: DeleteButtonProps) {
         </Dialog>
 
         
-    )}
+    )
+}
     

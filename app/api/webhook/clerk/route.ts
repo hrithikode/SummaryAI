@@ -57,10 +57,10 @@ export async function POST(req: NextRequest) {
                 ON CONFLICT (id) DO NOTHING
             `;
 
-            console.log(`✅ User ${id} created with basic plan`);
+            console.log(` User ${id} created with basic plan`);
             
         } catch (error) {
-            console.error('❌ Error creating user:', error);
+            console.error(' Error creating user:', error);
             return Response.json({ error: 'Failed to create user' }, { status: 500 });
         }
     }
