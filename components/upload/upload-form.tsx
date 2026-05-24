@@ -107,7 +107,8 @@ export default function UploadForm() {
             
            
             if (!resp || resp.length === 0) {
-                toast('Please use a different File');
+                console.error("uploadthing failed:", resp);
+                toast('upload failed');
                 setLoading(false);
                 return;
             }
